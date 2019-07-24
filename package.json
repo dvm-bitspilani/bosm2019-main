@@ -1,0 +1,27 @@
+{
+  "name": "bosm2019-main",
+  "version": "1.0.0",
+  "description": "weboage for a sports fest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvm-bitspilani/bosm2019-main.git"
+  },
+  "author": "DVM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvm-bitspilani/bosm2019-main/issues"
+  },
+  "homepage": "https://github.com/dvm-bitspilani/bosm2019-main#readme",
+  "devDependencies": {
+    "css-loader": "^3.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
