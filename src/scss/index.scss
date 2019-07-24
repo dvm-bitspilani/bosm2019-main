@@ -1,6 +1,7 @@
 $Futura: 'FuturaPt';
 $BigNoodle: 'BigNoodleTitling';
-
+$Aero: 'Aero';
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
 @font-face {
     font-family: 'FuturaPT';
     src: url('../fonts/FuturaPTBold.otf');
@@ -8,6 +9,10 @@ $BigNoodle: 'BigNoodleTitling';
 @font-face {
     font-family: 'BigNoodleTitling';
     src: url('../fonts/big_noodle_titling.ttf');
+}
+@font-face {
+    font-family: 'Aero';
+    src: url('../fonts/Aero.ttf');
 }
 body{
     background: #ffffff;
@@ -20,12 +25,86 @@ body{
     overflow: hidden;
     .navbar {
         display: grid;
-        grid-template-rows: 10vh;
-        grid-template-columns: 20vw 40vw 20vw 20vw;
-
+        grid-template-rows: 20vh;
+        grid-template-columns: 30vw 46vw 9vw 15vw;
         .logo {
+            padding-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             font-size: 53px;
-            font-family: $Futura;
+            color: #333333;
+            font-family: $Aero;
+            .line {
+                width: 64px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #333333;
+            }
+        }
+        .nav-links {
+            display: grid;
+            grid-template-rows: 20vh;
+            grid-template-columns: 10vw 10vw 10vw 10vw;
+            .links {
+                line-height: 20vh;
+                color: #303030;
+                font-family: $Futura;
+                font-size: 24px;
+            }
+        }
+        .icons {
+            display: grid;
+            grid-template-columns: 40px 40px 40px;
+            .fa {
+                line-height: 20vh;
+                font-size: 26px;
+                color: #5E5E60;
+            }
+        }
+    }
+    .main-container {
+        display: grid;
+        grid-template-rows: 10vh 75vh;
+        grid-template-columns: 350px 70vw;
+        transform: skewY(-2deg);
+        padding-left: 10vw;
+        background: url('../../src/images/component.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff;
+        
+        .main-text {
+            display: grid;
+            transform: skewY(2deg);
+            grid-row-start: 2;
+            grid-template-rows: 34vh 80px 64px;
+            .tagline {
+                font-size: 118px;
+                font-family: $BigNoodle;
+            }
+            .dates {
+                font-family: $Aero;
+                font-size: 34px;
+            }
+            .button {
+                font-size: 34px;
+                font-family: $BigNoodle;
+                color: #242424;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ffffff;
+                border-radius: 40px 35px;
+                width: 160px;
+                cursor: pointer;
+            }
+        }
+        .main-image {
+            background: url('../../src/images/untitled.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-row-start: 2;
         }
     }
 }
