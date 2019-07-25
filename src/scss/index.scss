@@ -1,7 +1,7 @@
 $Futura: 'FuturaPt';
 $BigNoodle: 'BigNoodleTitling';
 $Aero: 'Aero';
-@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+// @import "../../node_modules/font-awesome/css/font-awesome.min.css";
 @font-face {
     font-family: 'FuturaPT';
     src: url('../fonts/FuturaPTBold.otf');
@@ -69,7 +69,8 @@ body{
         grid-template-columns: 350px 70vw;
         transform: skewY(-2deg);
         padding-left: 10vw;
-        background: url('../../src/images/component.png');
+        background-image: url('../images/component.png');
+        // background: url("../images/component.png");
         background-size: cover;
         background-repeat: no-repeat;
         color: #ffffff;
@@ -101,7 +102,7 @@ body{
             }
         }
         .main-image {
-            background: url('../../src/images/untitled.png');
+            background-image: url('../images/untitled.png');
             background-size: cover;
             background-repeat: no-repeat;
             grid-row-start: 2;
