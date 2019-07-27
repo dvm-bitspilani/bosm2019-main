@@ -1,4 +1,4 @@
-// import "../scss/index.scss";
+import "../scss/index.scss";
 var count = 0;
 
 const formSlide = () => {
